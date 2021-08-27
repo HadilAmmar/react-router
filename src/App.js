@@ -130,7 +130,7 @@ function App() {
       <Navigation/>
      <Switch>
        <Route exact path='/' >
-         <Home/>
+         <Home movies={movies} />
        </Route>
       <Route path='/movielist'>
       <MovieList movies={movies} />
@@ -138,7 +138,7 @@ function App() {
       <Route path='/contact' >
         <Contact/>
         </Route>
-      <Route path='/movie/:id' >
+      <Route path='/movie/:ID' >
         <MovieScreen movies={movies} />
         </Route>
       <Route path='*'>

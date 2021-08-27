@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Movie = ({ movie }) => {
     return (
         <div>
-<Link to={`/movie/${movie.id}`}>
+<Link to={`/movie/${movie.ID}`}>
         <Card style={{ width: '18rem' }}>
   <Card.Img alt={movie.name} variant="top" src={movie.posterurl} />
   <Card.Body>
